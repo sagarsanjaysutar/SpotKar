@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>
+        SpotKar | A Complete Parking Solution
+    </title>
+
+    <link rel="stylesheet" type="text/css" href="Design/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Design/css/spots/custom_css.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo:200&display=swap" rel="stylesheet">
+    <style>
+        .fade-out.aos-animate {
+            opacity: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="jumbotron jbt1 ">
+            <h1 class="text-center"><label>SpotKar</label></h1>
+            <h6 class="text-center"><label>A complete parking solution.</label> </h6>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <hr class="small_line">
+            </div>
+
+            <nav class="navbar navbar-expand-lg  " id='navid'>
+
+                <!--Hamburger button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav  ">
+                        <li class="nav-item">
+                            <a class="nav-link bold">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link">Contact Us</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="jumbotron jbt2 p-3">
+            <div>
+
+            </div>
+            <div class="pl-details" data-aos="fade-up" data-aos-duration="1500">
+                <h2><label>Parking Lot Name</label></h2>
+                <h6><label>Parking Spot City</label></h6>
+
+            </div>
+
+            <div id="content-placeholder" class="p-0">
+                <div class="content fade-out" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="pl-status" id="pl-status">
+                        <div class="row">
+                            <div class="col-4">
+                                <h7>
+                                    Status :-2 out of 5 spots are available."
+                                </h7>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h7 id="selected-spt">
+                                </h7>
+                            </div>
+                            <div class="col-4">
+                                <h7>
+                                    Status :-2 out of 5 spots are available."
+                                </h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container d-flex justify-content-center align-items-cente">
+                        <div class="row d-flex justify-content-center align-items-center" id="spt-group">
+
+                            <div class="col-6  col-lg-3">
+                                <div class="spt shadow" id="spt-1"></div>
+                            </div>
+                            <div class="col-6  col-lg-3 ">
+                                <div class="spt shadow" id="spt-2"></div>
+                            </div>
+                            <div class="col-6  col-lg-3 ">
+                                <div class="spt shadow" id="spt-3"></div>
+                            </div>
+
+                            <div class="col-6 col-lg-3 ">
+                                <div class="spt shadow" id="spt-4"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-center align-items-end p-3 ">
+                        <button class="btn btn-outline-light " id="book-btn">Book and Pay</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="jumbotron jbt3 custom_footer p-3">
+            <div class="row">
+                <div class="col-12 footer_contact">
+                    <div class="footer_contact_content">
+                        <strong class="h4">Contact Us</strong><br><br>
+                        Email: sutarsagarsanjay@gmail.com <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <p class="copyright text-center">
+            © Copyright 2020 SpotKar - All Rights Reserved
+        </p>
+    </div>
+    <script type="text/javascript" src="Design/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="Design/js/popper.js"></script>
+    <script type="text/javascript" src="Design/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        var a = document.getElementById("book-btn");
+
+
+        var spt1, spt2, spt3, spt4;
+        spt1 = document.getElementById("spt-1");
+        spt2 = document.getElementById("spt-2");
+        spt3 = document.getElementById("spt-3");
+        spt4 = document.getElementById("spt-4");
+
+
+        document.getElementById("spt-group").onclick = buten;
+        var counter = 0;
+
+        function buten(e) {
+
+            var classes = e.target.className;
+            document.getElementById(e.target.id).classList.add("selected");
+            if (classes.includes("spt") && !classes.includes("selected")) {
+                counter = counter + 1;
+                document.getElementById(e.target.id).style.backgroundColor = "#680e4b";
+                document.getElementById(e.target.id).innerHTML = "<h1>" + counter + "</h1>";
+                a.classList.remove("disabled");
+                a.classList.remove("btn-outline-light");
+                a.classList.add("btn-light");
+            } else if (classes.includes("selected")) {
+                counter = counter - 1;
+                document.getElementById(e.target.id).classList.remove("selected");
+
+                document.getElementById(e.target.id).style.backgroundColor = "#42033d";
+                document.getElementById(e.target.id).innerHTML = " ";
+            } else {
+                console.log("Error in selecting");
+            }
+            if (counter == 0) {
+                a.classList.add("disabled");
+                a.classList.add("btn-outline-light");
+            }
+            document.getElementById("selected-spt").innerHTML = counter + " Spots Selected";
+
+            console.log(a.classList.length);
+
+        }
+    </script>
+
+
+</body>

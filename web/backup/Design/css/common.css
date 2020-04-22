@@ -1,0 +1,42 @@
+body {
+    background-color: #d3d3d3;
+}
+
+label {
+    font-family: Segoe UI, sans-serif, serif;
+    font-size: 30px;
+    margin: 30px 15px 15px 15px;
+
+}
+
+hr {
+    background-color: #2d2d2d;
+    height: 2px;
+}
+
+br {
+    margin: 10px;
+    padding: 10px;
+}
+
+.card {
+/*    width: 15rem;
+    background-color: ;
+    color: ;*/
+    margin-top:1rem;
+
+}
+
+.container {
+    background-color: #A9A9A9;
+
+}
+
+.row {
+    justify-content: center;
+   
+    margin: 10px;
+}
+
+
+

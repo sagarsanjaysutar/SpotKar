@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>showParkingLot</servlet-name>
+        <servlet-class>com.processes.showParkingLot</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getCities</servlet-name>
+        <servlet-class>com.processes.getCities</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getPrice</servlet-name>
+        <servlet-class>com.processes.getPrice</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>com.processes.NewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>confirmation</servlet-name>
+        <servlet-class>com.processes.confirmation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>showParkingLot</servlet-name>
+        <url-pattern>/showParkingLot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getCities</servlet-name>
+        <url-pattern>/getCities</url-pattern>
+    </servlet-mapping>   
+    
+    <servlet-mapping>
+        <servlet-name>confirmation</servlet-name>
+        <url-pattern>/confirmation</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>getPrice</servlet-name>
+        <url-pattern>/getPrice</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

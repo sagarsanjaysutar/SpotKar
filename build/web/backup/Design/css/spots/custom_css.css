@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Exo', Segoe UI;
+    background-color: #282828;
+
+    color: black;
+}
+
+.jumbotron {
+    margin: 0px;
+}
+
+.small_line {
+    border-color: black;
+    width: 10%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+
+
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+.jbt1 {
+    padding: 10px;
+    background-color: #dcdcdd;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+#navId button {
+    border: none;
+}
+
+/*Section 1*/
+.container {
+    padding: 0px;
+
+}
+
+/*Section 2*/
+.jbt2 {
+    color: white;
+    background-color: #46494c;
+    min-height: 50vh;
+    padding: 10px;
+}
+
+.spt {
+    width: 10rem;
+    height: 15.5rem;
+    background-color: #dcdcdd2c;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+}
+
+.spt:hover {
+    background-color: #dcdcdd6b;
+    border: 3px solid #dcdcdd;
+
+
+
+}
+
+.spt-sm {
+    width: 2rem;
+    height: 3rem;
+    background-color: #dcdcdd6b;
+
+    margin: 1.5rem;
+
+    border-radius: 0.3rem;
+
+}
+
+.spt-sm:hover {
+    background-color: #dcdcdd6b;
+    border: 3px solid #dcdcdd;
+
+
+}
+
+.content {
+    height: 52vh;
+    padding: 5px;
+}
+
+.content .card {
+    height: 20rem;
+    border-radius: 0px;
+
+}
+
+.card-body {
+    border-radius: 0px;
+}
+
+/*Section 3*/
+.jbt3 {
+
+    background-color: #c5c3c6;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.btn-1 {
+    background-color: white;
+}
+
+.footer_address_content {
+    height: 25%;
+
+
+    border: none;
+}
+
+.footer_contact_content {
+    height: 25%;
+
+
+    border: none;
+}
+
+
+.copyright {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.search-bar {
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+/*For mobile*/
+@media only screen and (max-width:768px) {
+    .spt {
+        width: 5rem;
+        height: 10rem;
+        margin: 1rem;
+        border-radius: 0.5rem;
+
+    }
+}

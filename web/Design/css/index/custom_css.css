@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Exo', Segoe UI;
+    background-color: #282828;    
+    color: #282828;
+}
+
+.small_line {
+    border-color: black;
+    width: 10%;
+    text-align: center;
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+.jbt1 {
+    padding: 10px;
+    background-color: #dcdcdd;
+
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+
+.jbt2 {
+    color: white;
+
+    background-color: #46494c;
+}
+
+.jbt3 {
+
+    background-color: #c5c3c6;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+
+
+
+.small_line {
+
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.copyright {
+    margin: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.custom-select{
+    text-align: center;
+    height: 4rem; 
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd; -webkit-appearance: none;
+    background-position-x: 40rem; 
+}
+
+/*For mobile*/
+@media only screen and (max-width:768px) {
+    .search-bar {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+
+
+    .footer_address {
+        width: 100%;
+    }
+
+    .footer_contact {
+        width: 100%;
+
+    }
+}
